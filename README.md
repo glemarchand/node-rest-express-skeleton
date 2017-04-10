@@ -20,4 +20,4 @@ Folder structure :
 
 ## Licence
 
-Beerware :-)
+Beerware :)
