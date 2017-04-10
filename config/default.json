@@ -1,0 +1,8 @@
+{
+	"http" : {
+		"port" : 8080
+	},
+	"message" : {
+		"welcome" : "Welcome on default/dev mode"
+	}
+}

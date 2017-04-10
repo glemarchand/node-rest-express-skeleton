@@ -1,12 +1,21 @@
 #!/usr/bin/env node
+'use strict';
 
 const express = require('express');
 const http = require('http');
 const router = require('./lib/router.js');
 const log = require('./lib/log');
 
+// look for environnement configuration
+process.argv.forEach((val, index) => {
+    if (val === '-e' || val === '--env') {
+        console.log(process.argv[index + 1]);
+        process.env.NODE_ENV = process.argv[index + 1];
+    }
+});
+
 // Parameters
-const PORT = 8080;
+const config = require('config');
 
 /*
  * Express configuration
@@ -26,8 +35,8 @@ app.use('/', express.static(__dirname + '/public'));
  * HTTP server
  */
 const server = http.createServer(app);
-server.listen(PORT, function () {
-    log.debug('HTTP server is listening on ' + PORT);
+server.listen(config.http.port, function () {
+    log.debug('HTTP server is listening on ' + config.http.port);
 });
 
 /*
