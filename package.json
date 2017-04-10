@@ -1,31 +1,31 @@
 {
-  "name": "skeleton",
-  "version": "1.0.0",
-  "description": "Skeleton for node app",
-  "main": "index.js",
-  "dependencies": {
-    "bunyan": "^1.8.8",
-    "bunyan-prettystream": "^0.1.3",
-    "express": "^4.15.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/william.fromont/skeleton.git"
-  },
-  "keywords": [
-    "Skeleton",
-    "REST",
-    "API"
-  ],
-  "author": "WFR",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/william.fromont/skeleton/issues"
-  },
-  "homepage": "https://gitlab.com/william.fromont/skeleton#README"
+    "name": "skeleton",
+    "version": "1.0.0",
+    "description": "Skeleton for node app",
+    "main": "index.js",
+    "dependencies": {
+        "bunyan": "1.8.8",
+        "bunyan-prettystream": "0.1.3",
+        "express": "4.15.2"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com/william.fromont/skeleton.git"
+    },
+    "keywords": [
+        "Skeleton",
+        "REST",
+        "API"
+    ],
+    "author": "WFR",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/william.fromont/skeleton/issues"
+    },
+    "homepage": "https://gitlab.com/william.fromont/skeleton#README"
 }
